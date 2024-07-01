@@ -1,0 +1,102 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.converter input, .converter select, .converter button {
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    width: 270px;
+    outline: none;
+    font-size: 18px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.converter input {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.converter select {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    appearance: none;
+    cursor: pointer;
+}
+
+.converter button {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.converter button:hover {
+    background-color: #45a049;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.converter input[readonly] {
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: not-allowed;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+input, select, button {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+input:focus, select:focus, button:focus {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.watermark {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+}
